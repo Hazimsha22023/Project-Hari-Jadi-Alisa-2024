@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ms">
+  <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Dulu Babe</title>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&family=Tektur&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Form/css/index.css">
+
+  </head>
+  <body>
+
+    <div>
+      <form action="./Form/Surat_Cinta.html" class="wrapper" method="get" onsubmit="return checkPassword()">
+        <h1 class="heading">Login</h1>
+
+        <div class="input-box-user">
+          <input type="text" placeholder="Username" name="username" autocomplete="off" required>
+          <i class='bx bx-user'></i>
+        </div>
+
+        <div class="input-box-pass">
+          <input type="password" placeholder="Password" id="password" name="password" autocomplete="off" required>
+          <span class=eye onclick="eyeFunction()" >
+            <i class="material-symbols-outlined" id="hide">
+              visibility
+            </i>
+            <i class="material-symbols-outlined" id="show">
+              visibility_off
+            </i>
+          </span>
+        </div>
+
+        <div class="remember-forgot">
+          <label><input type="checkbox">Remember me</label>
+          <a href="Form/Forgot.html">Forgot Password?</a>
+        </div>
+
+        <button type="submit" class="Login" id="login" value="Unlock">Login</button>
+        
+        <div class="register-link">
+          <p>Dont have account?
+            <a href="Form/Register.html">Register</a>
+          </p>
+        </div>
+      </form>
+    </div>
+    <script src="Form/js/index.js"></script>
+  </body>
+</html>
